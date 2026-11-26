@@ -828,7 +828,7 @@ Log JSON của agent:
 
 | Lần | Hỏi gì | Nhận gì | Tự sửa và kiểm tra thế nào |
 | --- | --- | --- | --- |
-| 1 | Đọc dự án, liệt kê việc cần làm, tạo `TASKS.md`, kiểm tra môi trường CP0 | Danh sách CP0–CP8, file `TASKS.md`, khung `MISSION_ANSWERS.md` | Đối chiếu với `CHECKPOINTS.md` và `RUBRIC.md` |
+| 1 | Đọc dự án, liệt kê việc cần làm, kiểm tra môi trường CP0 | Danh sách việc cần làm theo CP0–CP8 (checklist cá nhân, không nộp), khung `MISSION_ANSWERS.md` | Đối chiếu với `CHECKPOINTS.md` và `RUBRIC.md` |
 | 2 | Làm CP1: đọc `develop/app.py` và `production/app.py`, chạy cả hai bản, điền Part 1 | Danh sách anti-pattern, output curl, bảng so sánh, giải thích lỗi 500 do `UnicodeEncodeError` | Tự chạy lại curl, đối chiếu số dòng code trong `develop/app.py` |
 | 3 | Làm CP2: build 2 image, đo kích thước, chạy compose stack, điền Part 2 | Trả lời 2.1, số đo image, sơ đồ stack, cách vượt lỗi 429 của Docker Hub bằng `mirror.gcr.io` | Số MB lấy từ `docker images` và `docker image inspect` trên máy mình, tự tính lại % |
 | 4 | Làm CP3: chạy `04-api-gateway` develop và production, test 401/403/200/429, viết cost guard Redis cho 4.4 | Output curl (đã che token), giải thích JWT, rate limiter, `budget_redis.py` dùng Lua script | Chạy `budget_redis.py` với Redis tạm, thử 50 thread đồng thời để chắc không vượt $10 |
