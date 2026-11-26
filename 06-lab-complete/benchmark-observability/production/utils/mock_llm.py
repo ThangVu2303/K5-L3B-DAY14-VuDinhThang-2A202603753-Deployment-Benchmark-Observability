@@ -112,6 +112,14 @@ KNOWLEDGE_BASE: list[tuple[list[str], str]] = [
     (["cloud run", "serverless", "railway", "render"],
      "Cloud Run, Railway, Render là nền tảng chạy container managed: tự scale, tự cấp HTTPS, "
      "bạn chỉ cần cung cấp image và biến môi trường."),
+    # Exercise 7.3 — bổ sung 2 tài liệu còn thiếu (security-02, scaling-03)
+    (["jwt", "api key"],
+     "API key là một chuỗi bí mật cố định, dùng mãi tới khi bị thu hồi. JWT là token có chữ ký số "
+     "(HMAC hoặc RSA), mang theo thông tin user và thời điểm hết hạn (exp); server chỉ cần kiểm tra "
+     "chữ ký là xác thực được, không phải tra database."),
+    (["kubernetes", "hpa", "autoscal"],
+     "Kubernetes HPA (Horizontal Pod Autoscaler) tăng giảm số pod dựa trên mức dùng CPU, memory, "
+     "hoặc custom metrics như RPS, độ dài hàng đợi lấy từ Prometheus."),
 ]
 
 # Agent v1 không có retrieval → chỉ "biết" vài câu chung chung như mock cũ

@@ -1,0 +1,7 @@
+# Secrets — không bao giờ commit
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.pyc
